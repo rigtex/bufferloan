@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>BufferLoan | 0% Interest Payment Assistance — Launching Soon</title>
+<meta name="description" content="BufferLoan partners with auto dealers to give car buyers 0% interest payment assistance when life happens. We help customers stay current, dealers keep deals, and lenders protect their portfolios. Launching soon." />
+<meta name="robots" content="index,follow" />
+<link rel="canonical" href="https://bufferloan.com/" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="BufferLoan — 0% Interest Payment Assistance" />
+<meta property="og:description" content="We help when life happens. 0% interest payment assistance, backed by dealers who care. Launching soon." />
+<meta property="og:url" content="https://bufferloan.com/" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="BufferLoan — 0% Interest Payment Assistance" />
+<meta name="twitter:description" content="We help when life happens. Launching soon." />
+
+<meta name="theme-color" content="#0A2540" />
+
+<style>
+:root {
+  --navy: #0A2540;
+  --navy-dark: #061a30;
+  --green: #22C55E;
+  --green-deep: #16A34A;
+  --off-white: #F7F9FC;
+  --text: #0F172A;
+  --muted: #475569;
+  --border: rgba(10, 37, 64, 0.08);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { min-height: 100%; }
+body {
+  font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: linear-gradient(180deg, #FFFFFF 0%, var(--off-white) 100%);
+  color: var(--text);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.container { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+
+/* Header */
+.site-header {
+  padding: 28px 0;
+}
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+.brand-mark {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+}
+.brand-name {
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  color: var(--navy);
+}
+.brand-name .accent { color: var(--green); }
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(34, 197, 94, 0.1);
+  color: var(--green-deep);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(34, 197, 94, 0.25);
+}
+.badge-dot {
+  width: 8px;
+  height: 8px;
+  background: var(--green);
+  border-radius: 50%;
+  animation: pulse 2s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.2); }
+}
+
+/* Hero */
+.hero {
+  padding: 80px 0 100px;
+  text-align: center;
+}
+.hero-mark {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 36px;
+  display: block;
+}
+.hero h1 {
+  font-size: clamp(2.4rem, 5vw, 3.8rem);
+  font-weight: 800;
+  color: var(--navy);
+  letter-spacing: -0.5px;
+  line-height: 1.1;
+  margin-bottom: 22px;
+}
+.hero h1 .accent { color: var(--green); }
+.hero .lede {
+  font-size: clamp(1.05rem, 1.6vw, 1.25rem);
+  color: var(--muted);
+  max-width: 640px;
+  margin: 0 auto 48px;
+}
+.hero .lede strong { color: var(--navy); font-weight: 700; }
+
+/* Pillars row */
+.pillars {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 920px;
+  margin: 0 auto 56px;
+}
+.pillar {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 26px 22px;
+  text-align: left;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.pillar:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(10, 37, 64, 0.06);
+}
+.pillar-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--navy), #1a3b5e);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+.pillar-icon.green { background: linear-gradient(135deg, var(--green-deep), var(--green)); }
+.pillar-icon svg { width: 22px; height: 22px; color: #fff; }
+.pillar h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 6px;
+}
+.pillar p {
+  font-size: 0.92rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+/* Contact strip */
+.contact-strip {
+  background: var(--navy);
+  color: #fff;
+  border-radius: 16px;
+  padding: 36px 32px;
+  max-width: 920px;
+  margin: 0 auto 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.contact-strip h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.contact-strip p {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0;
+}
+.contact-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 22px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 0.98rem;
+  text-decoration: none;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+.btn:hover { transform: translateY(-1px); }
+.btn-primary {
+  background: var(--green);
+  color: #fff;
+}
+.btn-primary:hover { background: var(--green-deep); }
+.btn-ghost {
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.btn-ghost:hover { background: rgba(255, 255, 255, 0.08); }
+.btn svg { width: 18px; height: 18px; }
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 28px 0;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+.site-footer a { color: var(--muted); text-decoration: none; }
+.site-footer a:hover { color: var(--navy); }
+.footer-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 720px) {
+  .pillars { grid-template-columns: 1fr; max-width: 420px; }
+  .hero { padding: 56px 0 72px; }
+  .hero-mark { width: 96px; height: 96px; margin-bottom: 28px; }
+  .contact-strip { padding: 28px 22px; flex-direction: column; text-align: center; }
+  .contact-actions { width: 100%; justify-content: center; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="/" aria-label="BufferLoan home">
+      <svg class="brand-mark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M32 4 L56 14 V32 C56 46 45 56 32 60 C19 56 8 46 8 32 V14 Z" fill="#fff" stroke="#0A2540" stroke-width="3" stroke-linejoin="round"/>
+        <path d="M32 4 L56 14 V32 C56 41 51 49 44 54 L32 60 V4 Z" fill="#22C55E" opacity="0.85"/>
+        <text x="32" y="40" font-family="Inter, Helvetica, Arial, sans-serif" font-size="24" font-weight="800" text-anchor="middle" fill="#0A2540">B</text>
+      </svg>
+      <span class="brand-name">Buffer<span class="accent">Loan</span></span>
+    </a>
+    <span class="badge">
+      <span class="badge-dot"></span>
+      Launching Soon
+    </span>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <svg class="hero-mark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M32 4 L56 14 V32 C56 46 45 56 32 60 C19 56 8 46 8 32 V14 Z" fill="#fff" stroke="#0A2540" stroke-width="3" stroke-linejoin="round"/>
+        <path d="M32 4 L56 14 V32 C56 41 51 49 44 54 L32 60 V4 Z" fill="#22C55E" opacity="0.85"/>
+        <text x="32" y="42" font-family="Inter, Helvetica, Arial, sans-serif" font-size="28" font-weight="800" text-anchor="middle" fill="#0A2540">B</text>
+      </svg>
+
+      <h1>0% interest payment assistance, <span class="accent">for when life happens.</span></h1>
+
+      <p class="lede">
+        BufferLoan partners with auto dealers to help car buyers stay current on their loans, <strong>at zero percent interest</strong>. Customers keep their cars. Dealers keep their deals. Lenders protect their portfolios. Everyone moves forward.
+      </p>
+
+      <div class="pillars">
+        <div class="pillar">
+          <div class="pillar-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 L4 6 V13 C4 18 7.5 21.5 12 22 C16.5 21.5 20 18 20 13 V6 Z"/></svg>
+          </div>
+          <h3>For the customer</h3>
+          <p>Help making any payment, first to last, at zero percent interest. Fast approval, confidential, debit card overnighted.</p>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon green">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+          </div>
+          <h3>For the dealer</h3>
+          <p>Fewer repos. More deals kept. Happier buyers who came back because you were the one who had their back.</p>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg>
+          </div>
+          <h3>For the lender</h3>
+          <p>Stronger portfolio performance, lower delinquency, healthier dealer partnerships. The whole engine runs smoother.</p>
+        </div>
+      </div>
+
+      <div class="contact-strip">
+        <div>
+          <h2>Want to be the first to know?</h2>
+          <p>Dealers, lenders, and partners — we'll be in touch as we launch.</p>
+        </div>
+        <div class="contact-actions">
+          <a href="tel:+18004288337" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            1-800-4-BUFFER
+          </a>
+          <a href="mailto:hello@bufferloan.com" class="btn btn-ghost">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            hello@bufferloan.com
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-row">
+      <span>&copy; <span id="yr">2026</span> BufferLoan. All rights reserved.</span>
+      <span>&middot;</span>
+      <span>Real support. Real fast. Real simple.</span>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+
+</body>
+</html>
